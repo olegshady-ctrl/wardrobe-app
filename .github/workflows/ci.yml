@@ -1,9 +1,20 @@
-steps:
-  - uses: actions/checkout@v4
-  - uses: actions/setup-node@v4
-    with: { node-version: 20, cache: 'npm' }
-  - run: npm ci
-  - name: Lint (non-blocking)
-    run: npm run lint || true
-  - name: Build (ignore eslint/ts fail)
-    run: npm run build || true
+name: CI
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - run: npm ci
+
+      # Линт не блокирует пайплайн (можно убрать "|| true" позже)
+      - name: Lint (non-blocking)
+        run: npm run lint || true
+
+      - name: Build
+        run: npm run build
