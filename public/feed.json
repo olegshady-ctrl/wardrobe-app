@@ -1,0 +1,26 @@
+[
+  {
+    "id": "p1",
+    "author": { "nickname": "oleg.shady", "avatarUrl": "/demo/avatars/oleg.jpg" },
+    "createdAt": "2025-09-01T12:00:00.000Z",
+    "photoUrl": "/demo/feed/p1.jpg",
+    "collageUrl": "/demo/feed/p1_collage.jpg",
+    "elements": [
+      { "id": "e1", "imageUrl": "/demo/e1.png", "title": "Футболка" }
+    ],
+    "caption": "Тестовый пост",
+    "likesCount": 3,
+    "likedByMe": false,
+    "favedByMe": false,
+    "comments": [
+      {
+        "id": "c1",
+        "author": { "nickname": "bmw_fan" },
+        "text": "Круто!",
+        "createdAt": "2025-09-01T12:30:00.000Z",
+        "likesCount": 1,
+        "likedByMe": false
+      }
+    ]
+  }
+]
