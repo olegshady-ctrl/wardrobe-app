@@ -166,3 +166,4 @@ ai/**/weights/
 # ОС/редакторы
 .DS_Store
 *.swp
+/.idea
