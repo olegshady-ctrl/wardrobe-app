@@ -134,3 +134,35 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# Node/JS
+node_modules/
+dist/
+build/
+.next/
+coverage/
+*.log
+
+# Env
+.env
+.env.*.local
+
+# Python/ML
+.rembg-venv/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Модели и веса (не коммитим тяжёлое)
+ai/**/weights/
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.safetensors
+
+# ОС/редакторы
+.DS_Store
+*.swp
